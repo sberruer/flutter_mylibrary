@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mylibrary/model/Book.dart';
 import 'package:flutter_mylibrary/service/BookService.dart';
 import 'package:flutter_mylibrary/widget/CoverPlaceholder.dart';
+import 'package:flutter_mylibrary/widget/MyLibraryBottomNavigationBar.dart';
 
 import 'EditBook.dart';
 
@@ -48,7 +49,8 @@ class _ListBookState extends State<ListBook> {
 //        onPressed: _incrementCounter,
         tooltip: 'Add a new book',
         child: Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
+      bottomNavigationBar: MyLibraryBottomNavigationBar(1),// This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
