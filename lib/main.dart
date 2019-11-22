@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_mylibrary/service/BookService.dart';
+import 'package:flutter_mylibrary/widget/CoverPlaceholder.dart';
 
 import 'model/Book.dart';
 
@@ -51,7 +52,9 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView.builder(
           itemCount: books.length,
           itemBuilder: (_, index) {
-            return ListTile(title: Text("Book"));
+            return ListTile(
+                leading: CoverPlaceholder(),
+                title: Text("Book"));
           }),
       floatingActionButton: FloatingActionButton(
 //        onPressed: _incrementCounter,
