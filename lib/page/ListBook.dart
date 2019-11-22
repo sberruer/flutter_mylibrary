@@ -5,18 +5,18 @@ import 'package:flutter_mylibrary/widget/CoverPlaceholder.dart';
 
 import 'EditBook.dart';
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+class ListBook extends StatefulWidget {
+  ListBook({Key key, this.title}) : super(key: key);
 
   final BookService bookService = BookService();
 
   final String title;
 
   @override
-  _MyHomePageState createState() => _MyHomePageState();
+  _ListBookState createState() => _ListBookState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ListBookState extends State<ListBook> {
   List<Book> books = List();
 
   @override
