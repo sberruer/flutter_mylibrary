@@ -7,9 +7,9 @@ import 'package:flutter_mylibrary/widget/MyLibraryBottomNavigationBar.dart';
 import 'EditBook.dart';
 
 class ListBook extends StatefulWidget {
-  ListBook({Key key, this.title}) : super(key: key);
+  ListBook({Key key, this.title, this.bookService}) : super(key: key);
 
-  final BookService bookService = BookService();
+  final BookService bookService;
 
   final String title;
 
